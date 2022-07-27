@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSelector">
+
+    <fragment
+        android:id="@+id/fragmentSelector"
+        android:name="com.example.tictactoe_task.FragmentSelector"
+        android:label="fragment_selector"
+        tools:layout="@layout/fragment_selector" >
+        <action
+            android:id="@+id/action_fragmentSelector_to_fragment9"
+            app:destination="@id/fragment9" />
+        <action
+            android:id="@+id/action_fragmentSelector_to_fragment16"
+            app:destination="@id/fragment16" />
+        <action
+            android:id="@+id/action_fragmentSelector_to_fragment25"
+            app:destination="@id/fragment25" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment9"
+        android:name="com.example.tictactoe_task.Fragment9"
+        android:label="fragment_9"
+        tools:layout="@layout/fragment_9" />
+    <fragment
+        android:id="@+id/fragment16"
+        android:name="com.example.tictactoe_task.Fragment16"
+        android:label="fragment_16"
+        tools:layout="@layout/fragment_16" />
+    <fragment
+        android:id="@+id/fragment25"
+        android:name="com.example.tictactoe_task.Fragment25"
+        android:label="fragment_25"
+        tools:layout="@layout/fragment_25" />
+</navigation>
